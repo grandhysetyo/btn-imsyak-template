@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BTN | IMSYAK</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body{
+        font-family: 'Titillium Web', sans-serif;
+      }
+    </style>
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -50,14 +59,14 @@
       <!-- SEARCH -->
       <div class="relative mt-5 lg:w-3/5 lg:mx-auto">
         <label
-          class="absolute w-18 left-4 -top-2 z-10 inline-block text-xs text-gray-600 bg-gray-50"
+          class="absolute w-18 left-4 -top-2 z-10 inline-block text-xs text-gray-600 bg-tertiary"
           for="color"
           >Pilih Kota</label
         >
         <div class="relative flex w-full">
           <select
             id="ddlCity"
-            class="block w-full py-3 pl-4 pr-8 text-sm bg-gray-50 border border-gray-500 rounded appearance-none cursor-pointer focus:outline-none hover:border-gray-400"
+            class="block w-full py-3 pl-4 pr-8 text-sm bg-tertiary border border-gray-500 rounded appearance-none cursor-pointer focus:outline-none hover:border-gray-400"
           >
             <option>Select...</option>
             <option value="male">Jakarta</option>
