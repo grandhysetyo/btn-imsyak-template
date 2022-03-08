@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTN | IMSYAK</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="px-5 py-3 bg-cyan-50 drop-shadow w-full">
+      <div class="flex justify-between">
+        <a href="http://" target="_blank" rel="noopener noreferrer">
+          <img class="h-4" src="bumn.png" alt="Logo BUMN" srcset="" />
+        </a>
+        <a href="" target="_blank">
+          <img class="h-5" src="btn.png" alt="" srcset="" />
+        </a>
+      </div>
+    </header>
+    <!-- CONTENT -->
+    <div
+      class="px-5 bg-repeat-x bg-cover md:bg-contain bg-[url('bg.png')] lg:w-18"
+    >
+      <!-- TITLE -->
+      <div class="relative w-64 mx-auto">
+        <img class="w-full object-contain" src="title.png" alt="" srcset="" />
+        <div
+          class="flex flex-col items-center absolute inset-0 px-8 py-14 text-white"
+        >
+          <h1 class="font-bold">Jadwal Imsyakiyah</h1>
+          <h2 class="font-medium text-sm">Ramadan 1443 H/2022 M</h2>
+        </div>
+      </div>
+      <!-- SEARCH -->
+      <div class="relative mt-5 lg:w-3/5 lg:mx-auto">
+        <label
+          class="absolute w-18 left-4 -top-2 z-10 inline-block text-xs text-gray-600 bg-gray-50"
+          for="color"
+          >Pilih Kota</label
+        >
+        <div class="relative flex w-full">
+          <select
+            id="ddlCity"
+            class="block w-full py-3 pl-4 pr-8 text-sm bg-gray-50 border border-gray-500 rounded appearance-none cursor-pointer focus:outline-none hover:border-gray-400"
+          >
+            <option>Select...</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center px-2 text-blue-400 pointer-events-none"
+          >
+            <svg
+              class="w-6 h-6 text-gray-500"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- TABLE -->
+      <div class="relative mt-2 z-10 lg:w-3/5 lg:mx-auto">
+        <div class="flex flex-col">
+          <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+            <div class="py-4 inline-block min-w-full sm:px-6 lg:px-8">
+              <div class="overflow-hidden">
+                <table class="w-full">
+                  <thead class="bg-amber-600 text-white text-xs font-normal">
+                    <tr class="">
+                      <th class="px-2" rowspan="2">Hari</th>
+                      <th colspan="2">Tanggal</th>
+                      <th class="px-2" rowspan="2">Imsyak</th>
+                      <th class="px-2" rowspan="2">Subuh</th>
+                      <th class="px-2" rowspan="2">Terbit</th>
+                      <th class="px-2" rowspan="2">Duha</th>
+                      <th class="px-2" rowspan="2">Zuhur</th>
+                      <th class="px-2" rowspan="2">Ashar</th>
+                      <th class="px-2" rowspan="2">Maghrib</th>
+                      <th class="px-2" rowspan="2">Isya</th>
+                    </tr>
+                    <tr>
+                      <th class="px-2">Masehi</th>
+                      <th class="px-2">Ramadan</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-xs">
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>Sabtu</td>
+                      <td>2 April</td>
+                      <td>1</td>
+                      <td class="bg-sky-600 text-white">01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td>01.20</td>
+                      <td class="bg-sky-600 text-white">01.90</td>
+                      <td>01.20</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <span class="text-xs mb-5">
+            <b class="text-red-500">Catatan:</b> Penentuan awal Ramadhan
+            menunggu keputusan Pemerintah memalui sidang itsbat Kementrian Agama
+            Republik Indonesia</span
+          >
+        </div>
+      </div>
+      <!-- BUTTON SIMPAN -->
+      <div class="relative flex w-full justify-around pb-5">
+        <button class="w-1/2 bg-clifford text-tertiary px-10 py-3 mr-1">Simpan PDF</button>
+        <button class="w-1/2 bg-clifford text-tertiary px-10 py-3 ml-1">Simpan JPG</button>
+      </div>
+      <!-- MASJID -->
+      <div class="absolute bottom-0 z-0 lg:w-11/12">
+        <img
+          class="w-full object-contain md:w-3/4 lg:w-1/2 mx-auto"
+          src="masjid.png"
+          alt=""
+          srcset=""
+        />
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="w-full px-4 py-4 bg-sky-600">
+      <div class="flex justify-center">
+        <p class="text-white text-xs">
+          &copy; Copyrigt 2022 | Bank Tabungan Negara
+        </p>
+      </div>
+    </footer>    
+  </body>
+</html>
