@@ -24,7 +24,8 @@
           colors: {
             primary: '#0c6aad',
             secondary: '#a88463',
-            tertiary: '#f6fbff'
+            tertiary: '#eff6ff',
+            quarternary: '#e12228'
           }
         }
       }
@@ -44,25 +45,26 @@
       </a>
     </div>
   </header>
-
+  
   <!-- CONTENT -->
-  <div class="px-5 bg-repeat-x bg-cover md:bg-contain bg-white lg:w-18">    
-    <div class="relative">
-      <img class="w-full object-cover" src="grafik.png" alt="" srcset="">
+  <div class="lg:w-18">        
+    <!-- GRAFIK -->
+    <div class="relative w-full">
+      <img class="w-full object-contain" src="grafik.png" alt="" srcset="">
     </div>
-    <div class="relative mt-5 lg:w-3/5 lg:mx-auto">
+    <div class="relative px-5 py-5 bg-white lg:w-3/5 lg:mx-auto rounded-b-lg drop-shadow-2xl">
       <!-- TITLE -->
-      <div class="flex flex-col items-center text-black">
+      <div class="flex flex-col items-center px-5 text-black">
         <h1 class="font-bold">Jadwal Imsyakiyah</h1>
         <h2 class="font-medium text-sm">Ramadan 1443 H/2022 M</h2>
       </div>
       <!-- SEARCH -->
-      <div class="relative">
-        <label class="absolute w-18 left-4 -top-2 z-10 inline-block text-xs text-gray-600 bg-tertiary" for="color">Pilih
+      <div class="relative px-5 mt-5">
+        <label class="absolute w-18 left-8 -top-2 z-10 inline-block bg-white text-xs text-gray-800" for="color">Pilih
           Kota</label>
         <div class="relative flex w-full">
           <select id="ddlCity"
-            class="block w-full py-3 pl-4 pr-8 text-sm bg-tertiary border border-gray-500 rounded appearance-none cursor-pointer focus:outline-none hover:border-gray-400">
+            class="block w-full py-3 pl-4 pr-8 text-sm border border-gray-500 rounded appearance-none cursor-pointer focus:outline-none hover:border-gray-400">
             <option>Select...</option>
             <option value="male">Jakarta</option>
             <option value="female">Surabaya</option>
@@ -76,121 +78,116 @@
         </div>
       </div>
       <!-- DATE -->
-      <div class="relative mt-8">
+      <div class="relative px-5 mt-8">
         <h1 class="text-black font-bold">JAKARTA</h1>
-        <div class="flex overflow-x-scroll scrollbar">
-          <div class="flex flex-col text-center w-36 h-24 px-1 py-3 mr-3 my-3 bg-tertiary border border-gray-400 rounded">
+        <div class="flex flex-nowrap overflow-x-scroll scrollbar w-92">          
+          <div class=" flex flex-col justify-center text-center mr-3 my-3 bg-tertiary border border-gray-400 rounded">
             <span class="text-xs">1 Ramadan</span>
-            <span class="text-base font-bold">02</span>
+            <span class="text-lg font-bold">02</span>
+            <span class="text-xs">April</span>
+          </div> 
+          <div class=" flex flex-col justify-center text-center mr-3 my-3 bg-tertiary border border-gray-400 rounded">
+            <span class="text-xs">1 Ramadan</span>
+            <span class="text-lg font-bold">02</span>
             <span class="text-xs">April</span>
           </div>
-          <div class="flex flex-col text-center px-2 py-3 mr-3 my-3 bg-tertiary border border-gray-400 rounded">
+          <div class=" flex flex-col justify-center text-center mr-3 my-3 bg-tertiary border border-gray-400 rounded">
             <span class="text-xs">1 Ramadan</span>
-            <span class="text-base font-bold">02</span>
+            <span class="text-lg font-bold">02</span>
             <span class="text-xs">April</span>
           </div>
-          <div class="flex flex-col text-center px-2 py-3 mr-3 my-3 bg-tertiary border border-gray-400 rounded">
+          <div class=" flex flex-col justify-center text-center mr-3 my-3 bg-tertiary border border-gray-400 rounded">
             <span class="text-xs">1 Ramadan</span>
-            <span class="text-base font-bold">02</span>
+            <span class="text-lg font-bold">02</span>
             <span class="text-xs">April</span>
           </div>
-          <div class="flex flex-col text-center px-2 py-3 mr-3 my-3 bg-tertiary border border-gray-400 rounded">
+          <div class=" flex flex-col justify-center text-center mr-3 my-3 bg-tertiary border border-gray-400 rounded">
             <span class="text-xs">1 Ramadan</span>
-            <span class="text-base font-bold">02</span>
+            <span class="text-lg font-bold">02</span>
             <span class="text-xs">April</span>
           </div>
-          <div class="flex flex-col text-center px-2 py-3 mr-3 my-3 bg-tertiary border border-gray-400 rounded">
+          <div class=" flex flex-col justify-center text-center mr-3 my-3 bg-tertiary border border-gray-400 rounded">
             <span class="text-xs">1 Ramadan</span>
-            <span class="text-base font-bold">02</span>
+            <span class="text-lg font-bold">02</span>
             <span class="text-xs">April</span>
           </div>
-          <div class="flex flex-col text-center px-2 py-3 mr-3 my-3 bg-tertiary border border-gray-400 rounded">
+          <div class=" flex flex-col justify-center text-center mr-3 my-3 bg-tertiary border border-gray-400 rounded">
             <span class="text-xs">1 Ramadan</span>
-            <span class="text-base font-bold">02</span>
+            <span class="text-lg font-bold">02</span>
             <span class="text-xs">April</span>
           </div>
-          <div class="flex flex-col text-center px-2 py-3 mr-3 my-3 bg-tertiary border border-gray-400 rounded">
+          <div class=" flex flex-col justify-center text-center mr-3 my-3 bg-tertiary border border-gray-400 rounded">
             <span class="text-xs">1 Ramadan</span>
-            <span class="text-base font-bold">02</span>
+            <span class="text-lg font-bold">02</span>
             <span class="text-xs">April</span>
           </div>
-          <div class="flex flex-col text-center px-2 py-3 mr-3 my-3 bg-tertiary border border-gray-400 rounded">
+          <div class=" flex flex-col justify-center text-center mr-3 my-3 bg-tertiary border border-gray-400 rounded">
             <span class="text-xs">1 Ramadan</span>
-            <span class="text-base font-bold">02</span>
+            <span class="text-lg font-bold">02</span>
             <span class="text-xs">April</span>
           </div>
-          <div class="flex flex-col text-center px-2 py-3 mr-3 my-3 bg-tertiary border border-gray-400 rounded">
+          <div class=" flex flex-col justify-center text-center mr-3 my-3 bg-tertiary border border-gray-400 rounded">
             <span class="text-xs">1 Ramadan</span>
-            <span class="text-base font-bold">02</span>
+            <span class="text-lg font-bold">02</span>
             <span class="text-xs">April</span>
           </div>
-          <div class="flex flex-col text-center px-2 py-3 mr-3 my-3 bg-tertiary border border-gray-400 rounded">
+          <div class=" flex flex-col justify-center text-center mr-3 my-3 bg-tertiary border border-gray-400 rounded">
             <span class="text-xs">1 Ramadan</span>
-            <span class="text-base font-bold">02</span>
+            <span class="text-lg font-bold">02</span>
             <span class="text-xs">April</span>
           </div>
-          <div class="flex flex-col text-center px-2 py-3 mr-3 my-3 bg-tertiary border border-gray-400 rounded">
+          <div class=" flex flex-col justify-center text-center mr-3 my-3 bg-tertiary border border-gray-400 rounded">
             <span class="text-xs">1 Ramadan</span>
-            <span class="text-base font-bold">02</span>
+            <span class="text-lg font-bold">02</span>
             <span class="text-xs">April</span>
           </div>
-          <div class="flex flex-col text-center px-2 py-3 mr-3 my-3 bg-tertiary border border-gray-400 rounded">
+          <div class=" flex flex-col justify-center text-center mr-3 my-3 bg-tertiary border border-gray-400 rounded">
             <span class="text-xs">1 Ramadan</span>
-            <span class="text-base font-bold">02</span>
+            <span class="text-lg font-bold">02</span>
             <span class="text-xs">April</span>
           </div>
+          <div class=" flex flex-col justify-center text-center mr-3 my-3 bg-tertiary border border-gray-400 rounded">
+            <span class="text-xs">1 Ramadan</span>
+            <span class="text-lg font-bold">02</span>
+            <span class="text-xs">April</span>
+          </div>                    
         </div>
-      </div>
-      <!-- SCHEDULE -->
-      <div class="relative mt-5">
-        <div class="flex flex-col items-center text-black">
-          <h1 class="font-bold">1 Ramadhan 1443 H</h1>
-          <h2 class="font-medium text-sm">JAKARTA</h2>
-        </div>
-        <div class="flex justify-center mt-2">
-          <div class="flex flex-col w-1/2 text-center border-r border-gray-500">
-            <span>IMSYAK</span>
-            <span>SUBUH</span>
-            <span>TERBIT</span>
-            <span>DUHA</span>
-            <span>ZUHUR</span>
-            <span>ASAR</span>
-            <span>MAGHRIB</span>
-            <span>ISYA</span>
-          </div>
-          <div class="flex flex-col w-1/2 text-center">
-            <span>04:02</span>
-            <span>04:30</span>
-            <span>05:52</span>
-            <span>06:19</span>
-            <span>12:00</span>
-            <span>15:20</span>
-            <span>17:45</span>
-            <span>19:10</span>
-          </div>
-        </div>
-        <!-- BUTTON SIMPAN -->
-        <div class="flex flex-col w-full items-center mt-5">
-          <button class="w-3/4 bg-secondary text-white py-3 mb-3 rounded-lg">Simpan PDF</button>
-          <button class="w-3/4 text-secondary  py-3 ml-1 border border-secondary rounded-lg">Simpan JPG</button>
-        </div>
-      </div>
+      </div>      
     </div>
-
-    <!-- BUTTON SIMPAN -->
-    <!-- <div class="relative flex w-full lg:w-3/5 lg:mx-auto justify-around pb-5">
-        <button class="w-1/2 bg-secondary text-white  py-3 mr-1 rounded">Simpan PDF</button>
-        <button class="w-1/2 text-secondary  py-3 ml-1 border border-secondary rounded ">Simpan JPG</button>
-      </div> -->
-    <!-- MASJID -->
-    <!-- <div class="absolute bottom-0 z-0 lg:w-11/12">
-        <img
-          class="w-full object-contain md:w-3/4 lg:w-1/2 mx-auto"
-          src="masjid.png"
-          alt=""
-          srcset=""
-        />
-      </div> -->
+    <!-- SCHEDULE -->
+    <div class="relative px-5 py-7 bg-tertiary bg-center bg-contain bg-no-repeat" style="background-image: url('masjid.png');">
+      <div class="flex flex-col items-center text-black">
+        <h1 class="font-bold">1 Ramadhan 1443 H</h1>
+        <h2 class="font-medium text-sm">JAKARTA</h2>
+      </div>
+      <div class="flex justify-center mt-2">
+        <div class="flex flex-col w-1/2 items-center text-center border-r border-gray-500">
+          <span class="px-2 py-1 mb-2">IMSYAK</span>
+          <span class="px-2 py-1 mb-2">SUBUH</span>
+          <span class="px-2 py-1 mb-2">TERBIT</span>
+          <span class="px-2 py-1 mb-2">DUHA</span>
+          <span class="px-2 py-1 mb-2">ZUHUR</span>
+          <span class="px-2 py-1 mb-2">ASAR</span>
+          <span class="px-2 py-1 mb-2">MAGHRIB</span>
+          <span class="px-2 py-1 mb-2">ISYA</span>
+        </div>
+        <div class="flex flex-col w-1/2 items-center text-center">
+          <span class="px-2 py-1 mb-2 text-white rounded bg-secondary">04:02</span>
+          <span class="px-2 py-1 mb-2 text-white rounded bg-secondary">04:30</span>
+          <span class="px-2 py-1 mb-2 text-white rounded bg-secondary">05:52</span>
+          <span class="px-2 py-1 mb-2 text-white rounded bg-secondary">06:19</span>
+          <span class="px-2 py-1 mb-2 text-white rounded bg-secondary">12:00</span>
+          <span class="px-2 py-1 mb-2 text-white rounded bg-secondary">15:20</span>
+          <span class="px-2 py-1 mb-2 text-white rounded bg-secondary">17:45</span>
+          <span class="px-2 py-1 mb-2 text-white rounded bg-secondary">19:10</span>
+        </div>
+      </div>
+      <!-- BUTTON SIMPAN -->
+      <div class="flex flex-col w-full items-center mt-8">
+        <button class="w-3/4 bg-quarternary text-white py-3 mb-3 rounded-full">Simpan PDF</button>
+        <button class="w-3/4 text-quarternary  py-3 ml-1 border border-quarternary rounded-full">Simpan JPG</button>
+      </div>
+    </div>    
   </div>
   <!-- FOOTER -->
   <footer class="w-full px-4 py-4 bg-primary">
